@@ -336,9 +336,9 @@ void Graphics::DrawRect( int x0,int y0,int x1,int y1,Color c )
 	}
 }
 
-void Graphics::DrawRect(Vec2 & vec1, Vec2 & vec2, Color c)
+void Graphics::DrawRect(Rect& rect, Color c)
 {
-	DrawRect(vec1.x, vec1.y, vec2.x, vec2.y, c);
+	DrawRect(rect.left, rect.up, rect.right, rect.down, c);
 }
 
 void Graphics::DrawCircle( int x,int y,int radius,Color c )
