@@ -23,6 +23,9 @@
 #include "Keyboard.h"
 #include "Mouse.h"
 #include "Graphics.h"
+#include "Vec2.h"
+#include "ball.h"
+#include "Rect.h"
 
 class Game
 {
@@ -40,6 +43,11 @@ private:
 private:
 	MainWindow& wnd;
 	Graphics gfx;
+	Rect left_wall =   { 0.0f, 0.0f, 0.0f, (float)Graphics::ScreenHeight };
+	Rect right_wall =  { (float)Graphics::ScreenWidth, 0.0f, (float)Graphics::ScreenWidth, (float)Graphics::ScreenHeight };
+	Rect upper_wall =  { 0.0f, 0.0f, 0.0f, (float)Graphics::ScreenWidth };
+	Rect bottom_wall = { 0.0f, (float)Graphics::ScreenHeight, (float)Graphics::ScreenWidth, (float)Graphics::ScreenHeight };
+	Ball ball = {Vec2(250.0f,250.0f), Vec2 (-1.0f,1.0f)};
 	/********************************/
 	/*  User Variables              */
 	/********************************/
