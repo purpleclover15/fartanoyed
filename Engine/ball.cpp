@@ -18,7 +18,7 @@ void Ball::drawBall(Graphics & gfx)
 
 bool Ball::doWallCollision(const Rect & Walls)
 {
-	const Rect rect = getRect();
+	const Rect rect = Rect::getRect(position, radius);
 	return true;
 }
 

@@ -44,4 +44,5 @@ void Game::ComposeFrame()
 {
 	ball.drawBall(gfx);
 	ball.updateBall();
+	ball.doWallCollision(left_wall);
 }

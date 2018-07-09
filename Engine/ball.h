@@ -18,7 +18,6 @@ public:
 	float radius = 7.0f;
 	Vec2 position;
 	Vec2 velocity;
-	Rect getRect() const;
 private:
 
 };
